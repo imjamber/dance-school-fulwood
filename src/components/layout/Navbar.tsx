@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
-import { SITE_TITLE } from "@/lib/constants"
 
 const NAV = [
   { label: "Home",     href: "/" },
@@ -30,8 +30,15 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
-          <Link href="/" className="font-serif text-lg text-charcoal hover:text-charcoal/60 transition-colors">
-            {SITE_TITLE}
+
+          <Link href="/" className="relative block h-9 w-48 shrink-0">
+            <Image
+              src="/images/logo.png"
+              alt="Fitchett Proll Ballet School"
+              fill
+              priority
+              style={{ objectFit: "contain", objectPosition: "left center", mixBlendMode: "multiply" }}
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-10">
