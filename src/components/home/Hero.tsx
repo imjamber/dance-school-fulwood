@@ -1,14 +1,30 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import Button from "@/components/ui/Button"
 import { SITE_TITLE, LOCATION_NAME, FULL_ADDRESS } from "@/lib/constants"
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal">
-      <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal to-[#2a2520]" />
 
+      {/* Background photo */}
+      <Image
+        src="/images/studio.jpg"
+        alt="Fitchett Proll Dance Fulwood studio"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      {/* Dark overlay — makes text readable and photo feel intentional */}
+      <div className="absolute inset-0 bg-charcoal/70" />
+
+      {/* Subtle gold vignette at bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-charcoal to-transparent" />
+
+      {/* Decorative vertical line */}
       <motion.div
         className="absolute left-10 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold/30 to-transparent hidden lg:block"
         initial={{ scaleY: 0 }} animate={{ scaleY: 1 }}
@@ -33,7 +49,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-ivory/50 text-base md:text-lg font-light max-w-md leading-relaxed"
+          className="text-ivory/60 text-base md:text-lg font-light max-w-md leading-relaxed"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
