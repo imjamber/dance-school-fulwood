@@ -37,7 +37,7 @@ export default function Navbar() {
               alt="Fitchett Proll Ballet School"
               fill
               priority
-              style={{ objectFit: "contain", objectPosition: "left center" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </Link>
 
