@@ -4,35 +4,35 @@ import { LOCATION_NAME } from "@/lib/constants"
 
 export default function Hero() {
   return (
-    <section className="bg-charcoal min-h-screen flex flex-col items-center justify-center px-6 text-center pt-16">
-      <div className="flex flex-col items-center gap-8 max-w-sm">
+    <section className="bg-ivory pt-16 px-6">
+      <div className="max-w-5xl mx-auto py-28 flex flex-col gap-10">
 
-        <div className="relative h-20 w-72">
+        <div className="relative h-20 w-80">
           <Image
             src="/images/logo.png"
             alt="Fitchett Proll Ballet School"
             fill
             priority
-            style={{ objectFit: "contain", objectPosition: "center", filter: "invert(1)", opacity: 0.9 }}
+            style={{ objectFit: "contain", objectPosition: "left center", mixBlendMode: "multiply" }}
           />
         </div>
 
-        <div className="w-8 h-px bg-ivory/20" />
+        <div className="w-12 h-px bg-charcoal/15" />
 
-        <p className="text-ivory/50 text-sm font-light leading-relaxed">
+        <p className="text-charcoal/60 text-sm font-light max-w-xs leading-relaxed">
           Dance classes for all ages in {LOCATION_NAME}.<br />From 18 months through to adults.
         </p>
 
         <div className="flex items-center gap-8">
           <Link
             href="/register"
-            className="text-xs tracking-[0.2em] uppercase text-ivory border-b border-ivory/30 hover:border-ivory pb-0.5 transition-colors"
+            className="text-xs tracking-[0.2em] uppercase text-charcoal border-b border-charcoal/40 hover:border-charcoal pb-0.5 transition-colors"
           >
             Enquire
           </Link>
           <Link
             href="/#classes"
-            className="text-xs tracking-[0.2em] uppercase text-ivory/35 hover:text-ivory/60 transition-colors"
+            className="text-xs tracking-[0.2em] uppercase text-charcoal/40 hover:text-charcoal/70 transition-colors"
           >
             View classes
           </Link>
