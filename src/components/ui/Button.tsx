@@ -1,7 +1,3 @@
-"use client"
-
-import { motion } from "framer-motion"
-
 interface ButtonProps {
   children: React.ReactNode
   variant?: "primary" | "outline" | "ghost"
@@ -17,8 +13,8 @@ export default function Button({
   children, variant = "primary", size = "md",
   href, onClick, type = "button", disabled = false, className = "",
 }: ButtonProps) {
-  const base = "inline-flex items-center justify-center font-medium tracking-widest uppercase transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
-  const sizes = { sm: "px-5 py-2 text-xs", md: "px-8 py-3 text-xs", lg: "px-12 py-4 text-sm" }
+  const base = "inline-flex items-center justify-center font-medium tracking-widest uppercase transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+  const sizes = { sm: "px-5 py-2 text-xs", md: "px-8 py-3 text-xs", lg: "px-10 py-3.5 text-xs" }
   const variants = {
     primary: "bg-gold text-charcoal hover:bg-gold-light disabled:opacity-50",
     outline: "border border-gold text-gold hover:bg-gold hover:text-charcoal disabled:opacity-50",
@@ -27,18 +23,11 @@ export default function Button({
   const classes = `${base} ${sizes[size]} ${variants[variant]} ${className}`
 
   if (href) {
-    return (
-      <motion.a href={href} className={classes} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-        {children}
-      </motion.a>
-    )
+    return <a href={href} className={classes}>{children}</a>
   }
   return (
-    <motion.button
-      type={type} onClick={onClick} disabled={disabled} className={classes}
-      whileHover={{ scale: disabled ? 1 : 1.02 }} whileTap={{ scale: disabled ? 1 : 0.98 }}
-    >
+    <button type={type} onClick={onClick} disabled={disabled} className={classes}>
       {children}
-    </motion.button>
+    </button>
   )
 }
