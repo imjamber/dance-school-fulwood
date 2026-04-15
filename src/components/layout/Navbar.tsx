@@ -9,7 +9,7 @@ const NAV = [
   { label: "Home",     href: "/" },
   { label: "Classes",  href: "/#classes" },
   { label: "Find Us",  href: "/#location" },
-  { label: "Register", href: "/register" },
+  { label: "Enquire",  href: "/register" },
 ]
 
 export default function Navbar() {

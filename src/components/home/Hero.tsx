@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="w-14 h-px bg-charcoal/20 mb-8" />
 
         <p className="text-charcoal/60 text-sm font-light max-w-xs leading-relaxed mb-12">
-          Dance classes for all ages in {LOCATION_NAME}. From 18 months to adult.
+          Dance classes for all ages in {LOCATION_NAME}. From 18 months through to adults.
         </p>
 
         <div className="flex flex-col sm:flex-row items-start gap-8">
@@ -25,7 +25,7 @@ export default function Hero() {
             href="/register"
             className="text-xs tracking-[0.2em] uppercase text-charcoal border-b border-charcoal/40 hover:border-charcoal pb-0.5 transition-colors"
           >
-            Register for classes
+            Enquire
           </Link>
           <Link
             href="/#classes"

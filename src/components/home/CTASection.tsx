@@ -31,7 +31,7 @@ export default function CTASection() {
               href="/register"
               className="text-xs tracking-[0.2em] uppercase text-charcoal border-b border-charcoal/30 hover:border-charcoal pb-0.5 transition-colors"
             >
-              Register online →
+              Enquire online →
             </a>
           </div>
         </div>

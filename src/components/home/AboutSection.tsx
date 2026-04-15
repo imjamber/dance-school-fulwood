@@ -14,13 +14,13 @@ export default function AboutSection() {
           <div className="w-10 h-px bg-charcoal/20 mb-8" />
 
           <p className="text-charcoal/65 text-sm leading-relaxed mb-5">
-            Fitchett Proll Dance continues the teaching tradition of Heather Fitchett, who trained at the Royal Ballet School. The school is now led by Martine Proll, carrying forward the same careful, classical approach that has defined it from the start.
+            Classes are held at {FULL_ADDRESS}. We welcome students from 18 months through to adults, with tuition grounded in the RAD syllabus. All teachers hold current DBS certificates.
           </p>
-          <p className="text-charcoal/65 text-sm leading-relaxed mb-5">
-            Classes are held at {FULL_ADDRESS}. We welcome students from 18 months to adult, with tuition grounded in the RAD syllabus. All teachers hold current DBS certificates.
+          <p className="text-charcoal/65 text-sm leading-relaxed mb-8">
+            Beginners are welcome throughout the year. We are happy to advise on the most suitable class.
           </p>
-          <p className="text-charcoal/65 text-sm leading-relaxed">
-            Beginners are welcome throughout the year. We are happy to advise on the most suitable class for your child.
+          <p className="text-charcoal/35 text-xs leading-relaxed">
+            The school continues the teaching tradition of Heather Fitchett, trained at the Royal Ballet School, and is now led by Martine Proll.
           </p>
         </div>
 

@@ -34,7 +34,7 @@ export default function LocationSection() {
           </div>
 
           <div className="flex gap-3 flex-wrap">
-            <Button href="/register" size="sm">Register for Classes</Button>
+            <Button href="/register" size="sm">Enquire</Button>
             <Button
               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(FULL_ADDRESS)}`}
               variant="outline" size="sm"
