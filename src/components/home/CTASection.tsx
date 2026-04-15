@@ -12,7 +12,7 @@ export default function CTASection() {
           </h2>
           <div className="w-10 h-px bg-charcoal/20 mb-8" />
           <p className="text-charcoal/60 text-sm leading-relaxed">
-            To enquire about classes or register, please contact us directly. We are happy to advise on which class is most suitable for your child.
+            To enquire about classes, please get in touch.
           </p>
         </div>
 
