@@ -7,11 +7,10 @@ export default function AboutSection() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
 
         <div>
-          <span className="text-charcoal/40 tracking-[0.25em] uppercase text-xs">About the school</span>
-          <h2 className="font-serif text-3xl text-charcoal font-light leading-tight mt-4 mb-6">
+          <h2 className="font-serif text-3xl text-charcoal font-light leading-tight mb-5">
             About the school
           </h2>
-          <div className="w-10 h-px bg-charcoal/20 mb-8" />
+          <div className="w-10 h-px bg-charcoal/20 mb-6" />
 
           <p className="text-charcoal/65 text-sm leading-relaxed mb-5">
             Classes are held at {FULL_ADDRESS}. We welcome students from 18 months through to adults, with tuition grounded in the RAD syllabus. All teachers hold current DBS certificates.
