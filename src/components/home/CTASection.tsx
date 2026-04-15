@@ -7,8 +7,8 @@ export default function CTASection() {
 
         <div>
           <span className="text-charcoal/40 tracking-[0.25em] uppercase text-xs">Enquiries</span>
-          <h2 className="font-serif text-4xl text-charcoal font-light leading-tight mt-4 mb-6">
-            Get in touch
+          <h2 className="font-serif text-3xl text-charcoal font-light leading-tight mt-4 mb-6">
+            Contact
           </h2>
           <div className="w-10 h-px bg-charcoal/20 mb-8" />
           <p className="text-charcoal/60 text-sm leading-relaxed">

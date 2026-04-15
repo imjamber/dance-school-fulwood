@@ -10,7 +10,7 @@ export default function Hero() {
           {LOCATION_NAME} — Lancashire
         </p>
 
-        <h1 className="font-serif text-6xl md:text-8xl text-charcoal font-light leading-none tracking-tight mb-8">
+        <h1 className="font-serif text-5xl md:text-6xl text-charcoal font-light leading-none tracking-tight mb-8">
           {SCHOOL_NAME}
         </h1>
 

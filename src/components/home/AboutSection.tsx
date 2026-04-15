@@ -8,8 +8,8 @@ export default function AboutSection() {
 
         <div>
           <span className="text-charcoal/40 tracking-[0.25em] uppercase text-xs">About the school</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-charcoal font-light leading-tight mt-4 mb-6">
-            Taught with care,<br />for a long time.
+          <h2 className="font-serif text-3xl text-charcoal font-light leading-tight mt-4 mb-6">
+            About the school
           </h2>
           <div className="w-10 h-px bg-charcoal/20 mb-8" />
 

@@ -11,8 +11,8 @@ export default function LocationSection() {
         <AnimatedSection className="flex flex-col gap-8">
           <div>
             <span className="text-gold tracking-[0.25em] uppercase text-xs font-medium">Find Us</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-charcoal font-light leading-tight mt-3 mb-4">
-              Getting Here
+            <h2 className="font-serif text-3xl text-charcoal font-light leading-tight mt-3 mb-4">
+              Find us
             </h2>
             <div className="w-10 h-px bg-gold" />
           </div>
