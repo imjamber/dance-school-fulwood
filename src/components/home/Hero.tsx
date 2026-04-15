@@ -1,14 +1,21 @@
 import Link from "next/link"
-import { SCHOOL_NAME, LOCATION_NAME } from "@/lib/constants"
+import Image from "next/image"
+import { LOCATION_NAME } from "@/lib/constants"
 
 export default function Hero() {
   return (
     <section className="bg-ivory pt-16 px-6">
       <div className="max-w-5xl mx-auto py-28 flex flex-col gap-10">
 
-        <h1 className="font-serif text-5xl md:text-6xl text-charcoal font-light leading-none tracking-tight">
-          {SCHOOL_NAME}
-        </h1>
+        <div className="relative h-24 w-96 max-w-full">
+          <Image
+            src="/images/logo.png"
+            alt="Fitchett Proll Ballet School"
+            fill
+            priority
+            style={{ objectFit: "contain", objectPosition: "left center" }}
+          />
+        </div>
 
         <div className="w-12 h-px bg-charcoal/15" />
 
