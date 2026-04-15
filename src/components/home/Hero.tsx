@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
 import Button from "@/components/ui/Button"
 import { SITE_TITLE, LOCATION_NAME, FULL_ADDRESS } from "@/lib/constants"
 
@@ -9,16 +8,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal">
 
-      {/* Background photo */}
-      <Image
-        src="/images/studio.jpg"
-        alt="Fitchett Proll Dance Fulwood studio"
-        fill
-        priority
-        className="object-cover object-center"
-      />
-
-      {/* Dark overlay — makes text readable and photo feel intentional */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-charcoal/70" />
 
       {/* Subtle gold vignette at bottom */}
