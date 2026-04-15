@@ -1,35 +1,39 @@
 import Link from "next/link"
+import FPLogo from "@/components/ui/FPLogo"
 import { SCHOOL_NAME, LOCATION_NAME } from "@/lib/constants"
 
 export default function Hero() {
   return (
-    <section className="bg-ivory pt-16 px-6">
-      <div className="max-w-5xl mx-auto py-28">
+    <section className="bg-charcoal min-h-screen flex flex-col items-center justify-center px-6 text-center pt-16">
+      <div className="flex flex-col items-center gap-8 max-w-sm">
 
-        <p className="text-charcoal/40 text-xs tracking-[0.35em] uppercase mb-10">
-          {LOCATION_NAME} — Lancashire
+        <FPLogo className="w-24 h-24" />
+
+        <div className="flex flex-col items-center gap-3">
+          <h1 className="font-serif text-4xl md:text-5xl text-ivory font-light tracking-wide">
+            {SCHOOL_NAME}
+          </h1>
+          <p className="text-ivory/40 text-xs tracking-[0.3em] uppercase">
+            {LOCATION_NAME} — Lancashire
+          </p>
+        </div>
+
+        <div className="w-8 h-px bg-ivory/20" />
+
+        <p className="text-ivory/50 text-sm font-light leading-relaxed">
+          Dance classes for all ages. From 18 months through to adults.
         </p>
 
-        <h1 className="font-serif text-5xl md:text-6xl text-charcoal font-light leading-none tracking-tight mb-8">
-          {SCHOOL_NAME}
-        </h1>
-
-        <div className="w-14 h-px bg-charcoal/20 mb-8" />
-
-        <p className="text-charcoal/60 text-sm font-light max-w-xs leading-relaxed mb-12">
-          Dance classes for all ages in {LOCATION_NAME}. From 18 months through to adults.
-        </p>
-
-        <div className="flex flex-col sm:flex-row items-start gap-8">
+        <div className="flex items-center gap-8">
           <Link
             href="/register"
-            className="text-xs tracking-[0.2em] uppercase text-charcoal border-b border-charcoal/40 hover:border-charcoal pb-0.5 transition-colors"
+            className="text-xs tracking-[0.2em] uppercase text-ivory border-b border-ivory/30 hover:border-ivory pb-0.5 transition-colors"
           >
             Enquire
           </Link>
           <Link
             href="/#classes"
-            className="text-xs tracking-[0.2em] uppercase text-charcoal/40 hover:text-charcoal/70 transition-colors"
+            className="text-xs tracking-[0.2em] uppercase text-ivory/35 hover:text-ivory/60 transition-colors"
           >
             View classes
           </Link>
